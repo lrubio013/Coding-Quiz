@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling the body of HTML*/
+body {
+    font-family: Arial;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    line-height: 1.5;
+    width: 60%
+}
+
+/* Giving my heading separate styling*/
+header {
+    color: black;
+    text-align: center;
+    padding: 40px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px 0
+}
+
+/* Making sure that my content is vin the middle of the screen*/
+.start-quiz {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+/* Giving my start quiz button some design*/
+button {
+    background-color: purple;
+    color: white;
+    padding: 10px;
+    font-size: large;
+    cursor: pointer;
+}
+
+.starting-game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
