@@ -17,13 +17,16 @@ body {
 
 /* Giving my heading separate styling*/
 header {
-    color: black;
     text-align: center;
-    padding: 40px;
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
     margin: 25px 0
+}
+
+.scores a,
+.timer {
+    font-size: 20px;
 }
 
 /* Making sure that my content is vin the middle of the screen*/
