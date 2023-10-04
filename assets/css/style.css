@@ -28,7 +28,15 @@ header {
 .timer {
     font-size: 20px;
 }
-
+/* Changed appearance of my "view high score*/
+.scores a {
+    color: purple;
+    cursor: pointer;
+}
+/* Changes the color of my "view high score when i hover over it*/
+.scores a:hover {
+    color: rgba(255, 3, 3, 0.733)
+} 
 /* Making sure that my content is vin the middle of the screen*/
 .start-quiz {
     text-align: center;
@@ -38,6 +46,10 @@ h1 {
     margin-bottom: 15px;
 }
 
+h2{
+    text-align: center;
+    color: rgba(255, 3, 3, 0.733)
+}
 /* Giving my start quiz button some design*/
 button {
     background-color: purple;
@@ -47,9 +59,33 @@ button {
     cursor: pointer;
 }
 
+.btn-grid {
+    display: grid;
+}
+
 .starting-game {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px 0;
+}
+/*Preventing my questions, intials and highscore box from showing up when my HTML first loads up */
+.hide {
+    display: none;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.highscore {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.centered {
+    text-align: center;
 }
