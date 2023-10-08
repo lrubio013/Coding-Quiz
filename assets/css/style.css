@@ -106,3 +106,5 @@ input[type="text"] {
     padding: 10px 0;
     border: 1px solid purple;
   }
+
+  /*Didnt need any media queries on this application as everything fits fine on smaller displays with the flex displays I set on the body*/

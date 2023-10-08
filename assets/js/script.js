@@ -81,12 +81,14 @@ function startGame() {
     questionIndex = 0
     questionContainerEl.classList.remove("hide");
     timerDecrease();
-    setNextQuestion();
+    showQuestion(randomQuestions[0])
 };
 
 //Goes to next question
 function setNextQuestion() {
     resetState();
+    questionIndex++
+    console.log("setNextQuestion")
     showQuestion(randomQuestions[questionIndex]);
 };
 
@@ -130,17 +132,13 @@ function selectAnswer(a) {
             timeLeft -= 10;
         }
     }
-
-    Array.from(answerButtonsEl.children).forEach(button => {
-         setStatusClass(button, button.dataset.correct)
-    })
-
-    if (randomQuestions.lenght > questionIndex + 1) {
-        nextButton.classList.remove("hide")
-        checkAnswerEl.classList.remove("hide")
-    } else {
-        startButton.classList.remove("hide")
-        saveScore();
+    if (randomQuestions.length > questionIndex +1) {
+        resetState()
+        questionIndex++
+        showQuestion(randomQuestions[questionIndex])
+    }
+    else {
+        saveScore()
     }
 };
 
