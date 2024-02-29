@@ -60,7 +60,7 @@ var randomQuestions, questionIndex;
 //Start button triggers first question and 'next button' to display
 startButton.addEventListener("click", startGame);
 nextButton.addEventListener("click", () => {
-    currentQuestionIndex++
+    questionIndex++
     setNextQuestion()
 });
 
@@ -112,8 +112,7 @@ function resetState() {
     nextButton.classList.add("hide")
     checkAnswerEl.classList.add("hide")
     while (answerButtonsEl.firstChild) {
-        answerButtonsEl.removeChild
-            (answerButtonsEl.firstChild)
+        answerButtonsEl.removeChild(answerButtonsEl.firstChild);
     }
 };
 
@@ -162,6 +161,7 @@ function clearStatusClass(element) {
 //saves the scores
 function saveScore() {
     clearInterval(timerID);
+    resetState();
     timerEl.textContent = "Time: " + timeLeft;
     setTimeout(function () {
         questionContainerEl.classList.add("hide");
@@ -214,7 +214,7 @@ restartButton.addEventListener("click", function () {
     window.location.reload();
 });
 
-// clears local storage
+// clears scores when you hit clear scores button
 clearScoresButton.addEventListener("click", function () {
     localStorage.clear();
     document.getElementById("highscore").innerHTML = "";
