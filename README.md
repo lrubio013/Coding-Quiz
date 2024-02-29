@@ -9,9 +9,10 @@ Made a website that combines HTML, CSS, and JavaScript to make a complete dynami
 - Then I added a CSS stylesheet to have a clean and polished look
 - Last I created a JavaScript file to make the webpage dynamic by using event listeners, functions, and the local storage
 
-## Resources
-I used the following website by "Interviewbit" to select the questions I used:
+## Resources % Contributions
+- I used the following website by "Interviewbit" to select the questions I used:
 https://www.interviewbit.com/javascript-mcq/
+- Thanks to Abdullah Al Hilfi for helping me fix my issues on October 7th 2023
 
 ## Screenshots:
 <img src=assets/images/screenshot1.png>

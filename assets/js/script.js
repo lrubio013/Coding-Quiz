@@ -170,26 +170,6 @@ function saveScore() {
     }, 1000)
 };
 
-//load score from local storage
-var loadScores = function () {
-    if (!savedScore) {
-        return false;
-    }
-
-    savedScore = JSON.parse(savedScore);
-    var initials = document.querySelector("#initials-field").value;
-    var newScore = {
-        score: timeLeft,
-        initials: initials
-    }
-    savedScore.push(newScore);
-    console.log(savedScore)
-    savedScore.forEach(score => {
-        initialsField.innerText = score.initials
-        playerScore.innerText = score.score
-    })
-};
-
 // show highscores
 function showHighScores(initials) {
     document.getElementById("submit-btn").classList.add("hide");
